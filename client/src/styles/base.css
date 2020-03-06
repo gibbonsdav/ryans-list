@@ -15,9 +15,90 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 1000px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.wrapper {
+  display: grid;
+  width: 1000px;
+  grid-template-columns: 1fr 3fr;
+  margin-left: 100px;
+  position: relative;
+}
+.banner {
+  width: 600px;
+  max-height: 45px;
+  background-color: rgb(238, 238, 238);
+  font-size: large;
+  font-weight: 400;
+  padding: 15px;
+  text-align: center;
+  text-justify: center;
+  border-top: darkgray solid 1px;
+  border-bottom: darkgray solid 1px;
+}
+
+.sidebar {
+  width: 200px;
+  height: 800px;
+  background-color: rgb(244, 244, 244);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.sidebar h1 {
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.sidebar h5 {
+  line-height: 1;
+  font-size: small;
+  color: rgb(41, 0, 247);
+}
+
+.sidebar input {
+  width: 168px;
+  height: 27px;
+}
+
+.maingrid {
+  width: 600px;
+  height: 700px;
+}
+
+.titles {
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+}
+
+.subtitles ul {
+  list-style: none;
+}
+
+.cats {
+  display: grid;
+  height: 700px;
+  grid-template-columns: 2fr 2fr 1fr;
+}
+
+.smallcat {
+  max-height: 800px;
+}
+
+.cities {
+  display: flex;
+  width: 100px;
+  height: 800px;
+  background-color: rgb(244, 244, 244);
+  position: absolute;
+  right: 20px;
+  top: 11px;
+  justify-content: center;
+  padding: 10px;
 }
