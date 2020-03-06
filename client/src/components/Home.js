@@ -17,6 +17,8 @@ export default props => {
         <h5>create a posting</h5>
         <h5>my account</h5>
         <input type="search" placeholder="search craigslist"></input>
+        <br></br>
+        <img src="calendar2.jpg" alt="calendar2" />
         <h5>help, faq, abuse, legal</h5>
         <h5>avoid scams and fraud</h5>
         <h5>personal safety tips</h5>
@@ -66,7 +68,41 @@ export default props => {
           <option value="espanol">espanol</option>
           <option value="italiano">italiano</option>
         </select>
-        {/* <h5>english</h5> */}
+        <div className="morecities">
+          <h4 className="nearby">nearby cl</h4>
+          <ul className="citylist">
+            <li>bakersfield</li>
+            <li>elko</li>
+            <li>flagstaff</li>
+            <li>fresno</li>
+            <li>gold country</li>
+            <li>hanford</li>
+            <li>imperial co</li>
+            <li>inland empire</li>
+            <li>los angeles</li>
+            <li>merced</li>
+            <li>modesto</li>
+            <li>mohave co</li>
+            <li>orange co</li>
+            <li>palm springs</li>
+            <li>phoenix</li>
+            <li>prescott</li>
+            <li>provo</li>
+            <li>reno</li>
+            <li>salt lake</li>
+            <li>san diego</li>
+            <li>san luis obispo</li>
+            <li>santa barbara</li>
+            <li>santa maria</li>
+            <li>show low</li>
+            <li>st george</li>
+            <li>stockton</li>
+            <li>tucson</li>
+            <li>ventura</li>
+            <li>visalia-tulare</li>
+            <li>yuma</li>
+          </ul>
+        </div>
       </div>
     </div>
   )
