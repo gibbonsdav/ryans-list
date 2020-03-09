@@ -8,6 +8,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 app.use("/api", catRoutes)
+// app.use("/api", postRoutes)
 
 app.listen(port, () => {
   console.log(`LISTENING ON PORT ${port}`)

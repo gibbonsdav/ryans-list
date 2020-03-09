@@ -47,7 +47,7 @@ export default props => {
                   </a>
                 </h4>
                 <div className="subtitles">
-                  <ul>
+                  <ul className="subcatlists">
                     {cat.sub.map(sub => (
                       <li>
                         <a href="#">{sub.name}</a>
