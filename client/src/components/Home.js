@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import { useCats } from "../hooks"
+import { Link } from "react-router-dom"
 
 import "../styles/base.css"
 
@@ -42,15 +43,19 @@ export default props => {
             {categories.map(cat => (
               <div className="smallcat" key={"cat" + cat.id}>
                 <h4>
-                  <a className="titles" href="#">
+                  <Link className="titles" to={"/" + cat.slug}>
                     {cat.name}
-                  </a>
+                  </Link>
+                  {/* <a className="titles" href="#">
+                    {cat.name}
+                  </a> */}
                 </h4>
                 <div className="subtitles">
                   <ul className="subcatlists">
                     {cat.sub.map(sub => (
                       <li>
-                        <a href="#">{sub.name}</a>
+                        <Link to={"/" + sub.slug}>{sub.name}</Link>
+                        {/* <a href="#">{sub.name}</a> */}
                       </li>
                     ))}
                   </ul>

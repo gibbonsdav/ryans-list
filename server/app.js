@@ -1,5 +1,6 @@
 const express = require("express")
 const catRoutes = require("./routes/list")
+// const postRoutes = require("./routes/posts")
 
 const app = express()
 const port = 3001
